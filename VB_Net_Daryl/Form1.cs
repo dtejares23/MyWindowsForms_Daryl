@@ -91,5 +91,10 @@ namespace VB_Net_Daryl
         {
             
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
