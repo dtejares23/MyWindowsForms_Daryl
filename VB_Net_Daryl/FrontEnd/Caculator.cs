@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace VB_Net_Daryl
 {
-    public partial class Form1 : Form
+    public partial class Caculator : Form
     {
-        public Form1()
+        public Caculator()
         {
             InitializeComponent();
             ArithmeticBox.TextChanged += ArithmeticBox_TextChanged;

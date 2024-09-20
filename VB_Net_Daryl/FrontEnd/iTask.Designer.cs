@@ -34,8 +34,10 @@
             this.directorySearcher2 = new System.DirectoryServices.DirectorySearcher();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Hello = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,6 +70,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.Hello);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -75,9 +79,20 @@
             this.panel1.Size = new System.Drawing.Size(166, 463);
             this.panel1.TabIndex = 4;
             // 
+            // Hello
+            // 
+            this.Hello.AutoSize = true;
+            this.Hello.Location = new System.Drawing.Point(13, 13);
+            this.Hello.Name = "Hello";
+            this.Hello.Size = new System.Drawing.Size(37, 13);
+            this.Hello.TabIndex = 1;
+            this.Hello.Text = "Hello, ";
+            this.Hello.UseMnemonic = false;
+            this.Hello.Click += new System.EventHandler(this.Hello_Click);
+            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(39, 28);
+            this.button1.Location = new System.Drawing.Point(39, 60);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -93,6 +108,16 @@
             this.webBrowser1.Size = new System.Drawing.Size(250, 250);
             this.webBrowser1.TabIndex = 5;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(22, 428);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(124, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "THE MIND READER";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // iTask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -105,6 +130,7 @@
             this.Text = "iTask";
             this.Load += new System.EventHandler(this.iTask_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -116,5 +142,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label Hello;
+        private System.Windows.Forms.Button button2;
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VB_Net_Daryl.FrontEnd;
 
 namespace VB_Net_Daryl
 {
@@ -47,6 +48,18 @@ namespace VB_Net_Daryl
         private void progressBar1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Hello_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TheMindReader newForm = new TheMindReader();
+            newForm.Show();
+            Hide();
         }
     }
 }

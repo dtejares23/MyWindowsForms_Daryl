@@ -47,34 +47,52 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FrontEnd\Caculator.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrontEnd\Caculator.Designer.cs">
+      <DependentUpon>Caculator.cs</DependentUpon>
     </Compile>
-    <Compile Include="iTask.cs">
+    <Compile Include="FrontEnd\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="iTask.Designer.cs">
+    <Compile Include="FrontEnd\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\iTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\iTask.Designer.cs">
       <DependentUpon>iTask.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewToDo.cs">
+    <Compile Include="FrontEnd\NewToDo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NewToDo.Designer.cs">
+    <Compile Include="FrontEnd\NewToDo.Designer.cs">
       <DependentUpon>NewToDo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\TheMindReader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\TheMindReader.Designer.cs">
+      <DependentUpon>TheMindReader.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FrontEnd\Caculator.resx">
+      <DependentUpon>Caculator.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="iTask.resx">
+    <EmbeddedResource Include="FrontEnd\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\iTask.resx">
       <DependentUpon>iTask.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewToDo.resx">
+    <EmbeddedResource Include="FrontEnd\NewToDo.resx">
       <DependentUpon>NewToDo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\TheMindReader.resx">
+      <DependentUpon>TheMindReader.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -105,7 +123,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BackEnd\" />
-    <Folder Include="FrontEnd\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VB_Net_Daryl.FrontEnd;
 
 namespace VB_Net_Daryl
 {
@@ -16,7 +17,7 @@ namespace VB_Net_Daryl
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new iTask());
+            Application.Run(new Login());
         }
     }
 }
