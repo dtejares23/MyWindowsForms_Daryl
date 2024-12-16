@@ -1,6 +1,6 @@
 ﻿namespace VB_Net_Daryl
 {
-    partial class iTask
+    partial class ITask
     {
         /// <summary>
         /// Required designer variable.
@@ -34,10 +34,11 @@
             this.directorySearcher2 = new System.DirectoryServices.DirectorySearcher();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.Hello = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.button2 = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,7 +46,7 @@
             // 
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.Visible = true;
-            this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
+            this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.NotifyIcon1_MouseDoubleClick);
             // 
             // directorySearcher1
             // 
@@ -65,7 +66,7 @@
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(100, 23);
             this.progressBar1.TabIndex = 3;
-            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
+            this.progressBar1.Click += new System.EventHandler(this.ProgressBar1_Click);
             // 
             // panel1
             // 
@@ -78,6 +79,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(166, 463);
             this.panel1.TabIndex = 4;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(22, 428);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(124, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "THE MIND READER";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // Hello
             // 
@@ -98,7 +109,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "New To-Do";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // webBrowser1
             // 
@@ -108,30 +119,33 @@
             this.webBrowser1.Size = new System.Drawing.Size(250, 250);
             this.webBrowser1.TabIndex = 5;
             // 
-            // button2
+            // checkBox1
             // 
-            this.button2.Location = new System.Drawing.Point(22, 428);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(124, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "THE MIND READER";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(766, 9);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(85, 17);
+            this.checkBox1.TabIndex = 6;
+            this.checkBox1.Text = "Dark Mode?";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.CheckBox1_CheckedChanged);
             // 
-            // iTask
+            // ITask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(858, 463);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.progressBar1);
-            this.Name = "iTask";
-            this.Text = "iTask";
-            this.Load += new System.EventHandler(this.iTask_Load);
+            this.Name = "ITask";
+            this.Text = "ITask";
+            this.Load += new System.EventHandler(this.ITask_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -144,5 +158,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label Hello;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

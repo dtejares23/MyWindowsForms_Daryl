@@ -19,12 +19,12 @@ namespace VB_Net_Daryl.FrontEnd
             //this.Text = title; // Set the title of the custom message box
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Are you ready for this?", "Hold on!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
         }

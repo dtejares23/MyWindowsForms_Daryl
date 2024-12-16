@@ -11,10 +11,10 @@ using VB_Net_Daryl.FrontEnd;
 
 namespace VB_Net_Daryl
 {
-    public partial class iTask : Form
+    public partial class ITask : Form
     {
         private ProgressBar progressBar1;
-        public iTask()
+        public ITask()
         {
             InitializeComponent();
 
@@ -24,28 +24,28 @@ namespace VB_Net_Daryl
 
 
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void GroupBox1_Enter(object sender, EventArgs e)
         {
 
         }
 
-        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        private void NotifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             NewToDo todo = new NewToDo();
             todo.Show();
         }
 
-        private void iTask_Load(object sender, EventArgs e)
+        private void ITask_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void progressBar1_Click(object sender, EventArgs e)
+        private void ProgressBar1_Click(object sender, EventArgs e)
         {
 
         }
@@ -55,11 +55,16 @@ namespace VB_Net_Daryl
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
             TheMindReader newForm = new TheMindReader();
             newForm.Show();
             Hide();
+        }
+
+        private void CheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

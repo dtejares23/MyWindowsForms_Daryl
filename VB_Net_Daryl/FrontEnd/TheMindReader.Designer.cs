@@ -51,7 +51,7 @@
             this.label1.Size = new System.Drawing.Size(368, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Think of a number between 1 and 10.";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // button1
             // 
@@ -62,7 +62,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Read my mind";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // TheMindReader
             // 

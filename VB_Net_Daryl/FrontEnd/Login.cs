@@ -52,7 +52,7 @@ namespace VB_Net_Daryl.FrontEnd
         {
             if (usernameInputBox.Text == "dtejares" || PasswordInputBox.Text == "Elliyah2023")
             {
-                iTask newForm = new iTask();
+                ITask newForm = new ITask();
                 newForm.Show();
                 Hide();
             }
